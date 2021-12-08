@@ -1,0 +1,220 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* END OF CSS CLEARING ------------------------------------------------------------------ */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:var(--primary-color);
+    font-family: 'Lora', serif, Arial, Helvetica, sans-serif;
+    /* Line-Height 2 double spaces it */
+    line-height:2;
+    font-size:large;
+}
+
+
+header{
+    background-color:var(--dark-primary-color);
+
+}
+
+header h1{
+    font-family: 'Francois One', sans-serif;
+    text-align:center;
+    color:var(--light-primary-color);
+    font-size:70px;
+    letter-spacing:1px;
+/*
+    text-shadow:var(---highlight-color) 0px 0px 5px;
+*/
+}
+
+nav{
+    text-align:center;
+    font-size:x-large;
+}
+
+nav a{
+    text-decoration:none;
+    transition: color 150ms ease-in;
+    background-color:var(---highlight-color);
+    padding: 5px 80px;
+    color:black;
+    font-weight:bolder;
+    
+}
+
+nav a:hover{
+    background-color:black;
+    color:var(---highlight-color);
+}
+
+ul{
+    list-style:disc;
+}
+
+i{
+    font-style:italic;
+}
+
+.maincenter{
+    background-color:var(--light-primary-color);
+    margin:0px 20%;
+    padding:2%;
+    box-shadow:black 1px 0px 20px;
+    font-size:20px;
+    display:flow-root;
+}
+
+.maincenter h1{
+    text-align:center;
+    font-size:2em;
+    margin-bottom:1em
+}
+.maincenter h2{
+    text-align:left;
+    font-size:1.5em;
+}
+
+
+.maincenter aside{
+    float:right;
+    padding:10px;
+    max-width:20em;
+    margin:5px 0px 5px 5px;
+    border:solid 3px var(--divider-color);
+    background-color:var(--secondary-color);
+}
+
+.maincenter aside h1{
+    font-size:1.5em;
+    padding:0px 0px;
+}
+
+
+.maincenter figure{
+    float:right;
+    max-width:20em;
+    margin:5px 0px 5px 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+}
+.maincenter figure img{
+    display:block;
+    margin:auto;
+}
+.maincenter figure figcaption{
+    border:solid 3px var(--divider-color);
+    background-color:var(--secondary-color);
+    font-style:italic;
+    padding:10px;
+}
+
+.gridImage{
+    display:grid;
+    grid-template-columns: min-content 1fr;
+    padding-right:5px;
+    gap:5em;
+}
+.gridImage img{
+    max-width:20em;
+    max-height:22em;
+    height: auto;
+    border:solid 2px var(--divider-color);
+}
+
+
+footer{
+    text-align:right;
+    color:var(--text-color);
+}
+
+/* IDs --------------------*/
+
+
+#portraitImage{
+    border-radius:50%;
+    max-width:20em;
+    height:auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    border:4px solid var(--divider-color);
+}
+
+#skillsInterests{
+    text-align:center;
+}
+
+#noBorder{
+    border:none;
+}
+
+
+/* VARIABLES --------------------*/
+
+:root{
+    --dark-primary-color:#1F663A;
+    --light-primary-color:white;
+    --primary-color:#C6CCB2;
+    ---highlight-color:#8CEAB0;
+
+    --divider-color:#3D664D;
+    --secondary-color:#E5EAFA;
+
+    --text-color:black;
+
+
+
+}
